@@ -1,53 +1,53 @@
 {\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue254;\red0\green0\blue255;\red144\green1\blue18;
+\red19\green120\blue72;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\deftab720
+\pard\pardeftab720\sl420\partightenfactor0
 
-\f0\fs24 \cf0 \
-int main()\
-\{\
-    int arraylong;\
-    int enternumber;\
-    int bigger=0, samller=0;\
-     \
-    \
-cout << "How many numbers do you like to enter? :" ;\
-cin >>arraylong;\
-cin.ignore();\
-int data[arraylong];\
+\f0\fs28 \cf0 \cb2 \expnd0\expndtw0\kerning0
+ \cb1 \
+\cf3 \cb2 #include\cf0  \cf3 <\cf4 iostream\cf3 >\cf0 \cb1 \
+\cf3 \cb2 #include\cf0  \cf3 <\cf4 string\cf3 >\cf0 \cb1 \
+\cf3 \cb2 using\cf0  \cf3 namespace\cf0  std;\cb1 \
 \
-for (int i=0; i< arraylong; i++)\
-\{\
-    cout <<"Enter number " << i+1 << ":" ;\
-    cin >> enternumber;\
-    data[i]=enternumber;\
-    \
-\}\
- \
+\cf3 \cb2 int\cf0  main()\cb1 \
+\cb2 \{\cb1 \
+\cb2     \cf3 int\cf0  arraylong;\cb1 \
+\cb2     \cf3 int\cf0  enternumber;\cb1 \
+\cb2     \cf3 int\cf0  bigger=\cf5 0\cf0 , samller=\cf5 0\cf0 ;\cb1 \
+\cb2      \cb1 \
+\cb2     \cb1 \
+\cb2 cout << \cf4 "How many numbers do you like to enter? :"\cf0  ;\cb1 \
+\cb2 cin >>arraylong;\cb1 \
+\cb2 cin.ignore();\cb1 \
+\cf3 \cb2 int\cf0  data[arraylong];\cb1 \
 \
-cout << endl;\
+\cf3 \cb2 for\cf0  (\cf3 int\cf0  i=\cf5 0\cf0 ; i< arraylong; i++)\cb1 \
+\cb2 \{\cb1 \
+\cb2     cout <<\cf4 "Enter number "\cf0  << i+\cf5 1\cf0  << \cf4 ":"\cf0  ;\cb1 \
+\cb2     cin >> enternumber;\cb1 \
+\cb2     data[i]=enternumber;\cb1 \
+\cb2     \cb1 \
+\cb2 \}\cb1 \
+\cb2  \cb1 \
 \
-for (int i=0; i< arraylong; i++)\
-\{\
-   if (data[i]<= samller)\
-   \{\
-      samller=data[i];\
-   \}\
-   \
-      if (data[i]>=bigger)\
-   \{\
-      bigger=data[i];\
-   \}\
-   \
- \
-    \
-\}\
-cout <<"The biggest one is:" <<  bigger << endl;\
-cout <<"The simallest one is:" <<  samller << endl;\
+\cb2 cout << endl;\cb1 \
+\cb2 bigger=data[\cf5 0\cf0 ];\cb1 \
+\cb2 samller=data[\cf5 1\cf0 ];\cb1 \
 \
 \
-return 0;\
-\}\
-\
+\cf3 \cb2 for\cf0  (\cf3 int\cf0  i=\cf5 0\cf0 ; i< arraylong; i++)\cb1 \
+\cb2 \{\cb1 \
+\cb2    \cf3 if\cf0  (data[i]<= samller)\cb1 \
+\cb2    \{\cb1 \
+\cb2       samller=data[i];\cb1 \
+\cb2    \}\cb1 \
+\cb2    \cb1 \
+\cb2       \cf3 if\cf0  (data[i]>=bigger)\cb1 \
+\cb2    \{\cb1 \
+\cb2       bigger=data[i];\cb1 \
+\cb2    \}\cb1 \
+\cb2    \cb1 \
 }
